@@ -1,0 +1,118 @@
+.mainMenu {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../assets/FondSolo.png);
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  z-index: 20;
+}
+
+.textIntro {
+  z-index: 3;
+  font-size: 2.5vw;
+  color: var(--white);
+  font-family: Nintendo-DS-BIOS;
+  position: absolute;
+  bottom: 30vw;
+  left: 70vw;
+  width: 25vw;
+  text-shadow: black 0px 0.3vw 0.5vw;
+}
+
+.television {
+  z-index: 1;
+  width: 65vw;
+  height: auto;
+  transform: translate(5vw, 0vh);
+}
+.contourTv {
+  width: 65vw;
+  height: auto;
+}
+
+.ecran {
+  position: absolute;
+  width: 40vw;
+  top: 8vw;
+  left: 8vw;
+  border-radius: 1vw;
+  animation: lumiere 5s infinite linear;
+  box-shadow: 0 0 7px rgb(69, 69, 69), 0 0 10px #fff, 0 0 42px rgb(128, 37, 9),
+    0 0 77px rgb(255, 255, 255), 0 0 100px rgb(132, 132, 132);
+}
+
+@keyframes lumiere {
+  0% {
+    box-shadow: 0 0 7px rgb(69, 69, 69), 0 0 10px #fff, 0 0 42px rgb(128, 37, 9),
+      0 0 77px rgb(255, 255, 255), 0 0 100px rgb(144, 144, 144);
+  }
+  50% {
+    box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 32px rgb(230, 67, 18),
+      0 0 87px rgb(236, 208, 0), 0 0 120px rgb(236, 208, 0);
+  }
+}
+
+.controllerFull {
+  z-index: 2;
+  transform: translate(5vw, 0vw);
+}
+
+.controllerUnpush {
+  width: 30vw;
+  height: auto;
+}
+
+.redButton {
+  width: 11.8vw;
+  position: absolute;
+  top: 4.78vw;
+  left: 17.01vw;
+  cursor: pointer;
+}
+
+.greenButton {
+  width: 11.8vw;
+  position: absolute;
+  top: 9.9vw;
+  left: 5.1vw;
+  cursor: pointer;
+}
+
+.table {
+  z-index: 0;
+  position: absolute;
+  align-self: flex-end;
+  align-items: left;
+  justify-items: left;
+  width: 100vw;
+  height: auto;
+}
+
+.bombBonzai {
+  width: 100vw;
+  height: auto;
+  position: absolute;
+}
+
+.tasse {
+  z-index: 1;
+  width: 20vw;
+  height: auto;
+  position: absolute;
+}
+.console {
+  z-index: 1;
+  width: 40vw;
+  height: auto;
+  position: absolute;
+  transform: translate(60vw, 0);
+}
+
+@media (max-width: 649px) {
+  .mainMenu {
+    display: none;
+  }
+}

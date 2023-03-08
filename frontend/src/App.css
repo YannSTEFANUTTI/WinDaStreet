@@ -1,0 +1,98 @@
+@import url(//db.onlinewebfonts.com/c/f04662ccafcc9e2ac4a8cafff8fcf24f?family=8-bit+pusab);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap");
+@font-face {
+  font-family: Nintendo-DS-BIOS;
+  src: url(./assets/Nintendo-DS-BIOS.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--text);
+}
+
+:root {
+  --yellow: #ffcf6a;
+  --black: #242322;
+  --white: #eeeeee;
+  --green: #49d196;
+  --red: #ea2654;
+  --blackTrans: rgba(36, 35, 34, 0.88);
+  --whiteTrans: rgba(238, 238, 238, 0.3);
+  --text: "Montserrat", sans-serif;
+  --title: "8-bit pusab";
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  background-color: orange;
+  overflow: hidden;
+  background-size: 100%;
+}
+
+.sidebarFull {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes switchToTop {
+  from {
+    transform: translateY(-2.5vw);
+  }
+  to {
+    transform: translateY(2.5vw);
+  }
+}
+
+@keyframes switchToBottom {
+  from {
+    transform: translateY(2.5vw);
+  }
+  to {
+    transform: translateY(-2.5vw);
+  }
+}
+
+.mobileToggle {
+  width: 13vw;
+  height: 13vw;
+  position: absolute;
+  top: 6vh;
+  background-color: var(--blackTrans);
+  border-radius: 0 3.5vw 3.5vw 0;
+  justify-content: center;
+}
+
+.mobileToggle .ToggleSwitch {
+  height: 9vw;
+  width: 5.25vw;
+  border-radius: 10vw;
+  border: 0.6vw solid var(--white);
+  gap: 0;
+  justify-content: center;
+}
+
+.mobileToggle .LeftSwitch {
+  width: 6vw;
+  animation: switchToTop 0.25s ease-in forwards;
+}
+
+.mobileToggle .RightSwitch {
+  width: 6vw;
+  animation: switchToBottom 0.25s ease-in forwards;
+}
+
+.mobileToggle .nameMode {
+  font-size: 2.75vw;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+#pixelPicture {
+  filter: blur(5px);
+}

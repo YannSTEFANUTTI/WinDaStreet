@@ -1,0 +1,37 @@
+@import "../../App.css";
+
+.AdminAllUserContainer {
+  display: flex;
+  flex-direction: column;
+  height: 58vh;
+  width: 100%;
+  padding: 0.75vw;
+  padding-top: 0;
+  overflow: scroll;
+  gap: 0.5vw;
+}
+
+.AdminUserContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--text);
+  font-weight: 500;
+  font-size: 0.9vw;
+  border-bottom: 0.1vw solid var(--black);
+  padding: 1vw 0 1vw 0;
+}
+
+.AdminUserInfo :nth-child(1) {
+  font-weight: 700;
+  font-size: 1.1vw;
+}
+
+.AdminDeleteUser {
+  background-image: url("../../assets/delete-admin.png");
+  background-size: cover;
+  background-position: center;
+  width: 1.5vw;
+  height: 1.5vw;
+  cursor: pointer;
+}

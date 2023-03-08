@@ -1,0 +1,340 @@
+.CreateAccount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.Createaccount_trait,
+.btnback_Createaccount {
+  display: none;
+}
+
+.CreateAccount_container {
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blackTrans);
+  height: 65vh;
+  width: 50vw;
+  border-radius: 3vw;
+}
+
+.CreateAccount_header {
+  display: flex;
+  align-items: center;
+  height: 20%;
+  width: 100%;
+  margin-top: 2vh;
+}
+
+.CreateAccount_header_Title {
+  display: flex;
+  justify-content: center;
+  color: var(--yellow);
+  width: 85%;
+  font-size: 2vw;
+  font-family: var(--title);
+  margin-left: 7.5vw;
+}
+
+.head_btn_CreateAccount {
+  display: flex;
+  justify-content: flex-end;
+  width: 10%;
+  height: 40%;
+  margin-right: 5vh;
+}
+.Createaccount_trait {
+  width: 15%;
+  height: 100%;
+}
+
+.CreateAccount_content {
+  display: flex;
+  height: 80%;
+  width: 100%;
+}
+
+.chooseAvatar {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin-top: 1.1vh;
+}
+
+.CreateAccount_P {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 1vw;
+  color: var(--white);
+  font-family: var(--title);
+}
+
+.avatar {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 40%;
+  width: 100%;
+  margin-top: 5.5vh;
+}
+
+.btn_preview {
+  height: auto;
+  width: 10%;
+  cursor: pointer;
+}
+.btn_next {
+  display: flex;
+  height: auto;
+  width: 10%;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+
+.inner {
+  white-space: nowrap;
+  transition: transform 0.3s;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 50%;
+}
+
+.carousel-Item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+}
+.CreateAccount_Form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5vw;
+  height: 50%;
+  width: 80%;
+  margin-top: 1.5vh;
+}
+
+.CreateAccount_Form > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80%;
+}
+
+.CreateAccount_Form > div > label {
+  display: flex;
+  align-self: flex-start;
+  color: var(--white);
+  width: 100%;
+  height: 40%;
+  font-size: 1vw;
+  font-family: var(--title);
+  margin-bottom: 1.5vh;
+}
+
+.CreateAccount_Form > div > input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  width: 100%;
+  border: none;
+  margin: 0;
+  font-size: 1vw;
+  border-radius: 0.5vw;
+  padding-left: 1vw;
+  margin-bottom: 2vh;
+  outline: none;
+  font-family: var(--title);
+  background-color: var(--white);
+}
+
+.CreateAccount_footer {
+  display: flex;
+  margin-top: 2vh;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+}
+
+.error {
+  font-size: 0.3vw;
+  font-family: var(--title);
+  background-color: var(--red);
+}
+
+.btn_CreateAccount {
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  height: 100%;
+  width: 35%;
+  border: none;
+  cursor: pointer;
+  font-size: 3.1vh;
+  border-radius: 1vh;
+  font-family: var(--text);
+  color: var(--white);
+  background-color: var(--green);
+}
+
+.btnExit_Createaccount {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .CreateAccount {
+    height: 90vh;
+    width: 100vw;
+  }
+  .CreateAccount_container {
+    height: 80%;
+    width: 80%;
+  }
+
+  .CreateAccount_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    width: 100vw;
+    margin-bottom: 5vh;
+  }
+
+  .CreateAccount_header_Title {
+    width: 50%;
+    text-align: center;
+    height: auto;
+    margin-bottom: 4vw;
+    font-size: 4vw;
+    padding-top: 0vh;
+    margin-left: 10vw;
+  }
+
+  .head_btn_CreateAccount {
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+    height: auto;
+    margin-right: 0vh;
+  }
+
+  .CreateAccount_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10vh;
+  }
+  .CreateAccount_P {
+    font-size: 3vw;
+  }
+
+  .chooseAvatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .avatar {
+    margin-top: 0;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2vh;
+  }
+  .carousele-Item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .CreateAccount_Form {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-right: 0;
+  }
+  .CreateAccount_Form > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+  }
+  .CreateAccount_Form > div > label {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 75%;
+    margin-bottom: 1vh;
+    font-size: 3vw;
+  }
+  .CreateAccount_Form > div > input {
+    display: flex;
+    height: 75%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1vh;
+    border-radius: 4.5%;
+    font-size: 3vw;
+    padding-left: 0%;
+  }
+  .CreateAccount_footer {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+    margin-bottom: 5vh;
+  }
+  .error {
+    display: flex;
+    text-align: center;
+    font-size: 1.5vh;
+    margin-top: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  .btn_CreateAccount {
+    display: flex;
+    align-self: center;
+    font-size: 5vw;
+    height: 100%;
+    width: 40%;
+    margin-bottom: 4vh;
+    border-radius: 0%;
+  }
+
+  .btnExit_Createaccount {
+    width: 8vw;
+    height: 8vw;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+  }
+
+  .Createaccount_trait,
+  .btnback_Createaccount {
+    display: none;
+  }
+}

@@ -1,0 +1,253 @@
+.Auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.Auth_Container {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 50vh;
+  width: 50vw;
+  background-color: var(--blackTrans);
+  border-radius: 3vw;
+}
+
+.Auth_Container_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25%;
+  width: 100%;
+}
+
+.btnExit_Auth {
+  display: flex;
+  justify-content: center;
+  padding-top: 3vh;
+  padding-right: 3vw;
+  align-items: center;
+  height: 10%;
+  width: 10%;
+}
+
+.Auth_Container_header > h2 {
+  display: flex;
+  justify-content: center;
+  color: var(--yellow);
+  width: 100%;
+  padding-top: 3vh;
+  font-size: 3vh;
+  font-weight: 500;
+  font-family: var(--title);
+  text-shadow: 0 0 0.25vw black;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 90%;
+}
+
+.login-form > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.login-form > div > label {
+  display: flex;
+  font-family: var(--title);
+  color: white;
+  margin-right: 25%;
+  width: 5%;
+  height: 15%;
+}
+
+.login-form > div > input {
+  display: flex;
+  width: 40vw;
+  height: 50%;
+  font-family: var(--title);
+  background-color: var(--white);
+  border-radius: 0.5vw;
+  padding: 0.5vw;
+}
+
+.login-form > div > input:hover {
+  box-shadow: 0 0 0.5vw var(--white);
+}
+
+.btn_auth_submit {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: end;
+}
+
+.error {
+  display: flex;
+  align-self: flex-start;
+  color: black;
+  font-family: var(--title);
+  font-size: 1.5vh;
+  margin-top: 1vh;
+  margin-right: 1vw;
+  width: auto;
+}
+
+.btn_auth_submit > button {
+  display: flex;
+  width: 25%;
+  height: 50%;
+  background-color: var(--green);
+  color: var(--white);
+  cursor: pointer;
+  font-family: var(--title);
+  font-size: 1.5vh;
+  text-align: center;
+  border-radius: 1vh;
+  border: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form > div > button:hover {
+  box-shadow: 0 0 0.5vw var(--green);
+}
+
+.signup {
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+  width: 50vw;
+  height: 20vh;
+  background-color: var(--blackTrans);
+  border-radius: 3vw;
+}
+
+div > h3 {
+  display: flex;
+  font-size: 3vh;
+  font-weight: 500;
+  color: var(--white);
+  font-family: var(--text);
+}
+
+.link_Signup {
+  display: flex;
+  color: var(--yellow);
+  font-size: 2vh;
+  font-weight: 500;
+  font-family: var(--title);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link_Signup {
+  text-shadow: 0 0 0.25vw black;
+}
+
+@media screen and (max-width: 768px) {
+  .Auth_Container {
+    height: 75vw;
+    width: 70vw;
+  }
+  .Auth_Container_header {
+    height: auto;
+    width: 100%;
+    margin-bottom: 0vh;
+  }
+  .Auth_Container_header > h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 3.5vw;
+    width: 100%;
+  }
+  .btnExit_Auth > img {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-form {
+    height: 80%;
+  }
+  .login-form > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40%;
+    gap: 1.5vh;
+  }
+
+  .login-form > div > label {
+    display: flex;
+    font-size: 2.5vw;
+    justify-content: center;
+    margin-right: 0;
+    width: 50%;
+    height: 15%;
+  }
+
+  .login-form > div > input {
+    display: flex;
+    width: 90%;
+    height: 30%;
+    border-radius: 2vw;
+    font-size: 2.5vw;
+  }
+
+  .btn_auth_submit {
+    display: flex;
+    width: auto;
+    height: auto;
+    margin-bottom: 0vh;
+  }
+  .btn_auth_submit > button {
+    display: flex;
+    width: 50%;
+    height: 35%;
+    font-size: 70%;
+    border-radius: 1vh;
+  }
+
+  .error {
+    display: flex;
+    align-self: flex-start;
+    color: black;
+    font-family: var(--title);
+    font-size: 2vw;
+    margin-top: 0vh;
+    margin-right: 0vw;
+    padding-left: 1vw;
+  }
+  .signup {
+    margin-top: 1vh;
+    width: 70vw;
+    height: 8vh;
+  }
+
+  div > h3 {
+    font-size: 1.5vh;
+  }
+  .link_Signup {
+    font-size: 1.5vh;
+  }
+}

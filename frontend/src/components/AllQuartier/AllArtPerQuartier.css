@@ -1,0 +1,147 @@
+.traitblanc1 {
+  height: 7vw;
+}
+
+.imageaddcontainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-right: 1.5vw;
+  cursor: pointer;
+}
+
+.labelImageAdd > input {
+  display: none;
+}
+
+.imgcapture {
+  width: 4vw;
+  height: auto;
+}
+
+.allartquartier {
+  overflow: scroll;
+  height: 56vh;
+  width: 56vw;
+}
+
+.artcontainer {
+  margin-bottom: 2vh;
+  border: solid 0.2vw var(--white);
+  width: 56vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.artcontainer p {
+  color: var(--white);
+  font-family: var(--text);
+  font-size: 1vw;
+  margin: auto;
+  font-weight: bold;
+  margin-top: 1vh;
+}
+span {
+  color: var(--yellow);
+  font-size: 1.2vw;
+}
+.describe p {
+  font-size: 1vw;
+  margin-bottom: 0.5vw;
+  margin-right: 2vw;
+  padding-left: 1vw;
+  width: 23vw;
+}
+
+.artFirstPictureContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.artFirstPicture {
+  width: 13.5vw;
+  padding: 0.5vw;
+}
+
+@media (max-width: 767px) {
+  .allartquartier {
+    overflow: scroll;
+    height: 50vh;
+    width: 70vw;
+  }
+
+  .artcontainer {
+    margin-bottom: 2vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .traitblanc1 {
+    display: none;
+  }
+
+  .imageaddcontainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 1.5vw;
+    cursor: pointer;
+  }
+
+  .labelImageAdd > input {
+    display: none;
+  }
+
+  .imgcapture {
+    width: 6vw;
+    height: auto;
+    margin-bottom: 1vw;
+  }
+
+  .artcontainer p {
+    color: var(--white);
+    font-family: var(--text);
+    font-size: 2vw;
+    margin: 0;
+    font-weight: bold;
+    margin-top: 0vh;
+  }
+
+  span,
+  .adressdeloeuvre {
+    display: none;
+  }
+
+  .describe p {
+    font-size: 2.5vw;
+    margin-bottom: 0vw;
+    margin-right: 0vw;
+    padding-left: 0vw;
+    width: auto;
+  }
+  .describe {
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nomdelloeuvre {
+    color: var(--yellow) !important;
+    font-size: 3.5vw !important;
+  }
+
+  .artFirstPictureContainer {
+    display: flex;
+    align-items: initial;
+    justify-content: left;
+  }
+
+  .artFirstPicture {
+    width: 20vw;
+    margin: 1vw;
+  }
+}

@@ -1,0 +1,165 @@
+.mainMobile {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../assets/FondSolo.png);
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  z-index: 20;
+}
+
+.textIntroMobile {
+  z-index: 3;
+  font-family: Nintendo-DS-BIOS;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 2%;
+  width: 65vw;
+  text-align: center;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+}
+
+.gameboyFull {
+  z-index: 1;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+}
+.gameboy {
+  width: 100vw;
+  height: auto;
+}
+
+.ecranGB {
+  position: absolute;
+  width: 57vw;
+  bottom: 92vw;
+  border-radius: 1vw;
+}
+
+.redButtonGB {
+  width: 20vw;
+  position: absolute;
+  bottom: 50vw;
+  left: 66vw;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.greenButtonGB {
+  width: 20vw;
+  position: absolute;
+  bottom: 40vw;
+  left: 44vw;
+  cursor: pointer;
+  z-index: 2;
+}
+
+@media (min-width: 400px) {
+  .mainMobile {
+    display: none;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 649px) {
+  .mainMobile {
+    display: flex;
+  }
+  .gameboyFull {
+    z-index: 1;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+  }
+
+  .mainMobile p {
+    font-size: 5vw;
+    bottom: 115vw;
+  }
+  .gameboy {
+    width: 65vw;
+    height: auto;
+  }
+
+  .ecranGB {
+    position: absolute;
+    width: 37.3vw;
+    bottom: 60.2vw;
+    border-radius: 1vw;
+  }
+
+  .redButtonGB {
+    width: 13vw;
+    position: absolute;
+    bottom: 33vw;
+    left: 60.5vw;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .greenButtonGB {
+    width: 13vw;
+    position: absolute;
+    bottom: 26vw;
+    left: 46vw;
+    cursor: pointer;
+    z-index: 2;
+  }
+}
+
+@media (max-height: 700px) and (max-width: 500px) {
+  .mainMobile {
+    display: flex;
+  }
+  .gameboyFull {
+    z-index: 1;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+  }
+
+  .mainMobile p {
+    font-size: 5vw;
+    bottom: 80%;
+    transform: translate(-50%, 0);
+  }
+  .gameboy {
+    width: 80vw;
+    height: auto;
+  }
+
+  .ecranGB {
+    position: absolute;
+    width: 45vw;
+    bottom: 74vw;
+    border-radius: 1vw;
+  }
+  .redButtonGB {
+    width: 16vw;
+    position: absolute;
+    bottom: 40.5vw;
+    left: 63vw;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .greenButtonGB {
+    width: 16vw;
+    position: absolute;
+    bottom: 32vw;
+    left: 45vw;
+    cursor: pointer;
+    z-index: 2;
+  }
+}

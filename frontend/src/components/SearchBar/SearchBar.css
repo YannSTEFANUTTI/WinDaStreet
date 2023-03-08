@@ -1,0 +1,103 @@
+@import "../../App.css";
+a {
+  text-decoration: none;
+}
+
+.SearchBar {
+  display: flex;
+  gap: 0.8vw;
+  align-items: center;
+}
+
+.SearchBar div {
+  display: flex;
+  align-items: center;
+}
+
+.SearchBar input {
+  border-radius: 0.4vw;
+  outline: none;
+  border: none;
+  box-shadow: inset -0.1vw -0.1vw 0.25vw rgb(172, 170, 170);
+  padding: 0.2vw 0.5vw 0.2vw 0.5vw;
+  width: 13vw;
+  font-family: var(--text);
+  font-size: 1vw;
+}
+
+.SearchBar img {
+  width: 1.4vw;
+  height: 1.4vw;
+}
+
+.SearchBarResult {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  border-radius: 0.4vw;
+  background-color: var(--blackTrans);
+  width: 13vw;
+  height: fit-content;
+  max-height: 10vw;
+  overflow-y: scroll;
+  z-index: 5;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.oneResult {
+  border-bottom: solid 0.05vw var(--whiteTrans);
+  width: 12vw;
+  height: fit-content;
+  padding: 0.5vw;
+  font-family: var(--text);
+  font-size: 1.25vw;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.oneResult:hover {
+  background-color: var(--black);
+  cursor: pointer;
+  color: var(--yellow);
+}
+
+.oneResult p {
+  color: var(--white);
+}
+
+.oneResult:hover p {
+  color: var(--yellow);
+}
+
+@media screen and (max-width: 767px) {
+  .SearchBar {
+    gap: 2.5vw;
+  }
+
+  .SearchBar input {
+    font-size: 3.75vw;
+    border-radius: 0.75vw;
+    width: 0;
+    opacity: 0;
+  }
+
+  .SearchBar img {
+    width: 5vw;
+    height: 5vw;
+  }
+
+  .SearchBarResult {
+    width: 60vw;
+    max-height: 30vw;
+  }
+
+  .oneResult {
+    width: 59vw;
+    font-size: 4vw;
+    padding: 1vw;
+  }
+}

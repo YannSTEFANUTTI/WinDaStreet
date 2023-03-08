@@ -1,0 +1,48 @@
+@import "../../App.css";
+
+.AdminRequest {
+  display: flex;
+  flex-direction: column;
+  height: 58vh;
+  width: 100%;
+  overflow: scroll;
+  gap: 0.5vw;
+  font-family: var(--text);
+  font-size: 0.9vw;
+  font-weight: 500;
+  padding: 0.5vw;
+}
+
+.AdminRequestContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 0.1vw solid var(--black);
+  margin-bottom: 1.25vh;
+}
+
+.AdminRequestPic {
+  display: flex;
+  gap: 1vw;
+}
+
+.AdminRequestPicOne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.25vw;
+}
+
+.AdminRequestPic img {
+  width: 100%;
+}
+
+.AdminRequestChoice {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 3vw;
+  width: 100%;
+  margin-bottom: 0.75vh;
+}

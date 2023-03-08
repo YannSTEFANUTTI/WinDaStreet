@@ -1,0 +1,125 @@
+.avatarWindow {
+  position: absolute;
+  z-index: 0;
+  padding: 1.2vw;
+  right: -10.2vw;
+  border-radius: 2vw 0% 0% 2vw;
+  background-color: var(--blackTrans);
+  backdrop-filter: blur(3px);
+  margin-top: 0.5vw;
+  width: auto;
+  display: flex;
+}
+
+.avatarWindow p {
+  font-family: var(--text);
+}
+
+.avatarWindow img {
+  width: 6vw;
+  height: 6vw;
+  border-radius: 1vw 1vw 1vw 1vw;
+}
+
+.friendsAndPictures {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1vw;
+  font-size: 0.8vw;
+  color: var(--white);
+}
+
+.userName {
+  font-size: 1.3vw;
+  font-weight: 700;
+  color: var(--yellow);
+  display: flex;
+  justify-content: space-between;
+  white-space: pre;
+  align-items: flex-end;
+  margin-bottom: 0.2vw;
+  width: auto;
+}
+
+.adminAvatar {
+  font-size: 0.8vw;
+  color: var(--white);
+  padding-left: 0.5vw;
+}
+
+.visitedFound {
+  border-bottom: solid 0.1vw var(--white);
+  padding-bottom: 0.7vw;
+}
+
+.Deconnection {
+  margin-top: 0.6vw;
+}
+
+@media screen and (max-width: 768px) {
+  .avatarWindow {
+    position: absolute;
+    z-index: 0;
+    padding: 1.2vw;
+    right: -20.5vw;
+    border-radius: 2vw 0% 0% 2vw;
+    background-color: var(--blackTrans);
+    backdrop-filter: blur(3px);
+    margin-top: 3vw;
+    width: auto;
+    display: flex;
+  }
+
+  .avatarWindow p {
+    font-family: var(--text);
+  }
+
+  .avatarWindow img {
+    width: 10.4vw;
+    height: 10.4vw;
+    border-radius: 1vw 1vw 1vw 1vw;
+  }
+
+  .friendsAndPictures {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1vw;
+    font-size: 1.7vw;
+    color: var(--white);
+  }
+
+  .userName {
+    font-size: 2.5vw;
+    font-weight: 700;
+    color: var(--yellow);
+    display: flex;
+    justify-content: space-between;
+    white-space: pre;
+    align-items: flex-end;
+    margin-bottom: 0.2vw;
+    width: auto;
+  }
+
+  .adminAvatar {
+    font-size: 1.5vw;
+    color: var(--white);
+    padding-left: 0.5vw;
+  }
+
+  .visitedFound {
+    border-bottom: solid 0.1vw var(--white);
+    padding-bottom: 0.7vw;
+  }
+
+  .Deconnection {
+    margin-top: 0.6vw;
+  }
+
+  .avatarContainer {
+    position: absolute;
+    height: 30vh;
+    width: 50vw;
+    right: 0;
+    overflow: hidden;
+  }
+}

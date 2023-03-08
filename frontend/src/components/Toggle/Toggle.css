@@ -1,0 +1,59 @@
+@import "../../App.css";
+
+@keyframes switchToRight {
+  from {
+    transform: translate(-0.75vw);
+  }
+  to {
+    transform: translate(0.75vw);
+  }
+}
+
+@keyframes switchToLeft {
+  from {
+    transform: translate(0.75vw);
+  }
+  to {
+    transform: translate(-0.75vw);
+  }
+}
+
+.Toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.75vw;
+  width: 15vw;
+}
+
+.ToggleSwitch {
+  display: flex;
+  align-items: center;
+  border-radius: 1vw;
+  height: 1.75vw;
+  width: 2.75vw;
+  border: 0.2vw solid white;
+}
+
+.ToggleSwitch:hover {
+  cursor: pointer;
+}
+
+.LeftSwitch {
+  width: 2.1vw;
+  animation: switchToLeft 0.25s ease-in forwards;
+}
+
+.RightSwitch {
+  width: 2.1vw;
+  animation: switchToRight 0.25s ease-in forwards;
+}
+
+.nameMode {
+  color: var(--white);
+  font-family: var(--text);
+  font-size: 1.75vw;
+  font-weight: 600;
+}
+
+@media (max-width: 649px) {
+}

@@ -1,0 +1,157 @@
+.windowControl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  z-index: 1;
+}
+
+.templateWindow {
+  margin-top: 6vw;
+  width: 60vw;
+  height: auto;
+  padding-bottom: 2vw;
+  background-color: var(--blackTrans);
+  backdrop-filter: blur(3px);
+  border-radius: 2vw;
+  box-shadow: 0.5vw 0.5vw 1vw rgba(0, 0, 0, 0.5);
+}
+
+.titleAndClose {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  width: auto;
+  height: auto;
+  margin: 1vw 2vw 2vw 2vw;
+  text-shadow: 0.3vw 0.5vh 0 var(--black);
+}
+
+.titleAndClose h1 {
+  color: var(--yellow);
+  font-family: var(--title);
+  width: 50vw;
+  letter-spacing: 0.2vw;
+  font-size: 2vw;
+  text-transform: uppercase;
+}
+.closingCross {
+  width: 2.5vw;
+  cursor: pointer;
+}
+.btnExit {
+  width: 2.5vw;
+  cursor: pointer;
+  z-index: 1;
+  display: flex;
+}
+
+.children {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
+}
+
+.previousimg {
+  width: 2.2vw;
+  cursor: pointer;
+  height: 2.2vw;
+}
+
+.prevAndLine {
+  display: flex;
+  margin-right: 1vw;
+  width: 100%;
+  z-index: 1;
+}
+
+.prevAndLine {
+  display: flex;
+  margin-right: 1vw;
+  width: 100%;
+  z-index: 1;
+}
+
+.traitblanc {
+  height: 2.2vw;
+}
+
+.btnprevious {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  width: 2.5vw;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.allButtons {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .templateWindow {
+    margin-top: 12vh;
+    width: 85vw;
+    height: auto;
+    border-radius: 5vw;
+    padding: 4vw;
+  }
+
+  .titleAndClose {
+    width: auto;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 4vw 0vw 4vw;
+    align-items: flex-start;
+    width: auto;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 4vw 0vw 4vw;
+    align-items: flex-start;
+  }
+
+  .titleAndClose h1 {
+    width: auto;
+    letter-spacing: 0.2vw;
+    margin-left: 0;
+    font-size: 4.5vw;
+  }
+
+  .titleAndClose {
+    margin: 1vw 1.5vw 2vw 0vw;
+    text-shadow: 0.3vw 0.5vh 0 var(--black);
+  }
+
+  .closingCross {
+    width: 5.5vw;
+    height: auto;
+  }
+
+  .previousimg {
+    width: 5.5vw;
+    height: auto;
+  }
+
+  .traitblanc {
+    height: 5.5vw;
+    height: 5.5vw;
+  }
+
+  .prevAndLine {
+    width: 7vw;
+  }
+
+  .allButtons {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2vw;
+  }
+}

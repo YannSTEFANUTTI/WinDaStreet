@@ -1,0 +1,46 @@
+.moreinfoimg {
+  width: 3vw;
+}
+
+.moreinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.moreinfoQuartier {
+  margin-top: 2vw;
+}
+
+.moreinfo p {
+  font-size: 2vw;
+}
+.moreinfo p {
+  margin-bottom: 2vw;
+  font-size: 0.9vw;
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+  .moreinfoimg {
+    display: none;
+  }
+  .moreinfo p {
+    display: none;
+  }
+  .moreinfo {
+    display: none;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 767px) {
+  .moreinfoimg {
+    display: none;
+  }
+  .moreinfo p {
+    display: none;
+  }
+  .moreinfo {
+    display: none;
+  }
+}

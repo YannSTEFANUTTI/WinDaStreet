@@ -1,0 +1,460 @@
+@import "../../App.css";
+
+.ArtDetailsContainer {
+  display: flex;
+  width: 56vw;
+  padding: 1vw;
+  gap: 1vw;
+  height: 50vh;
+  border: solid 0.2vw var(--white);
+}
+
+.ArtDetailsPicturesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22.5vw;
+  height: 40vh;
+  overflow: hidden;
+}
+
+.ArtDetailsPictures {
+  display: flex;
+  width: 60vw;
+  height: 40vh;
+  overflow: hidden;
+}
+
+.ArtDetailsArrow {
+  position: absolute;
+  width: 22.5vw;
+  display: flex;
+  justify-content: space-between;
+  z-index: 25;
+}
+
+.ArtDetailsArrow div {
+  background-color: var(--blackTrans);
+  width: 1.5vw;
+  height: 3vw;
+  background-repeat: no-repeat;
+  background-size: 1.25vw 1.25vw;
+}
+
+.ArtDetailsArrow div:hover {
+  cursor: pointer;
+  background-color: var(--black);
+}
+
+.ArtDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+  width: 35vw;
+  margin-left: 1vw;
+  font-family: var(--text);
+  font-size: 1.1vw;
+  color: var(--white);
+  text-align: justify;
+  overflow-y: scroll;
+}
+
+.ArtDetailsTitle {
+  height: fit-content;
+  float: left;
+  margin-right: 0.5vw;
+  font-weight: 700;
+  color: var(--yellow);
+}
+
+.ArtDetailsLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5vh;
+}
+
+.ArtDetailsCommentsContainer {
+  display: flex;
+  align-items: center;
+  font-family: var(--text);
+  color: var(--white);
+  font-weight: 600;
+  gap: 1vw;
+  cursor: pointer;
+}
+
+.ArtDetailsCommentsContainer img {
+  width: 2.5vw;
+}
+
+.ArtDetailsSend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ArtDetailsLeftArrow {
+  border-radius: 0 0.5vw 0.5vw 0;
+  background-size: contain;
+  background-position: left;
+  background-image: url("../../assets/back-arrow.png");
+}
+
+.ArtDetailsRightArrow {
+  border-radius: 0.5vw 0 0 0.5vw;
+  background-position: right;
+  background-image: url("../../assets/right-arrow.png");
+}
+
+.OpenPictureVision {
+  width: 22.5vw;
+  height: 40vh;
+  position: absolute;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.OnePictureHover {
+  width: 75%;
+  height: 75%;
+  position: absolute;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.OpenPictureVisionHover {
+  background-color: var(--blackTrans);
+  background-image: url("../../assets/full-screen.png");
+  background-size: 3.5vw 3.5vw;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.CommentsContainer {
+  margin-top: -1vw;
+  margin-bottom: -1vw;
+  border-left: 0.2vw solid var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1vw;
+  padding-right: 0;
+  gap: 1.25vh;
+  width: 30vw;
+  font-family: var(--text);
+  color: var(--white);
+  text-align: justify;
+  font-size: 1.1vw;
+}
+
+.AllCommentsContainer {
+  height: 40vh;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25vh;
+  width: 100%;
+}
+
+.OneCommentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1vw;
+  border: 0.2vw solid var(--white);
+  gap: 1vh;
+  width: 100%;
+}
+
+.OneCommentContainer > p {
+  align-self: flex-start;
+  width: 100%;
+  overflow: scroll;
+}
+
+.OneCommentHeader {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-weight: 600;
+  color: var(--yellow);
+}
+
+.CommentInput {
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 5vh;
+}
+
+.CommentInput img {
+  width: 2.25vw;
+  cursor: pointer;
+}
+
+.CommentInput input {
+  height: 100%;
+  width: 91%;
+  border: none;
+  outline: none;
+  font-family: var(--text);
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+}
+
+/* --------------RESPONSIVE MOBILE------------------ */
+
+@media (max-width: 767px) {
+  .ArtDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    padding: 0vw;
+    gap: 0vw;
+    height: 50vh;
+  }
+
+  .ArtDetailsPicturesContainer {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 16vh;
+    overflow: hidden;
+  }
+
+  .ArtDetailsPictures {
+    display: flex;
+    width: 60vw;
+    height: 40vh;
+    overflow: hidden;
+  }
+
+  .ArtDetailsArrow {
+    position: absolute;
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    z-index: 25;
+  }
+
+  .ArtDetailsArrow div {
+    background-color: initial;
+    width: 1.5vw;
+    height: 3vw;
+    background-repeat: no-repeat;
+    background-size: 1.25vw 1.25vw;
+  }
+
+  .ArtDetailsArrow div:hover {
+    cursor: pointer;
+    background-color: var(--black);
+  }
+
+  .ArtDetails {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+    width: 50vw;
+    margin-left: 0vw;
+    font-family: var(--text);
+    font-size: 3.5vw;
+    color: var(--white);
+    text-justify: inter-word;
+    overflow-y: scroll;
+    align-self: center;
+  }
+  .detailsText {
+    text-align: justify;
+  }
+  .ArtDetails :nth-child(2) {
+    order: 3;
+  }
+
+  .Oeuvre {
+    display: none !important;
+  }
+
+  .ArtDetails div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0vh;
+  }
+
+  .ArtDetailsTitle {
+    height: fit-content;
+    float: left;
+    margin-right: 0.5vw;
+    font-weight: 700;
+    color: var(--yellow);
+  }
+
+  .ArtisteName {
+    font-size: 6vw;
+    font-weight: 700;
+    color: var(--yellow);
+  }
+
+  .Artiste {
+    display: none;
+  }
+
+  .ArtDetailsLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0vh;
+  }
+
+  .ArtDetailsCommentsContainer {
+    display: flex;
+    align-items: center;
+    font-family: var(--text);
+    color: var(--white);
+    font-weight: 600;
+    gap: 1vw;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+  }
+
+  .ArtDetailsCommentsContainer img {
+    width: 2.5vw;
+  }
+
+  .ArtDetailsSend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ArtDetailsLeftArrow {
+    border-radius: 0 0.5vw 0.5vw 0;
+    background-size: contain;
+    background-position: left;
+    background-image: url("../../assets/back-arrow.png");
+    scale: 3.5;
+  }
+
+  .ArtDetailsRightArrow {
+    border-radius: 0.5vw 0 0 0.5vw;
+    background-position: right;
+    background-image: url("../../assets/right-arrow.png");
+    scale: 3.5;
+  }
+
+  .OpenPictureVision {
+    width: 50vw;
+    height: 16vh;
+    position: absolute;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .OnePictureHover {
+    width: 75%;
+    height: 75%;
+    position: absolute;
+    z-index: 20;
+    cursor: pointer;
+  }
+
+  .OpenPictureVisionHover {
+    background-color: var(--blackTrans);
+    background-image: url("../../assets/full-screen.png");
+    background-size: 3.5vw 3.5vw;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .CommentsContainer {
+    margin-top: 0vw;
+    margin-bottom: 0vw;
+    border-left: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0vw;
+    padding-right: 0;
+    gap: 0vh;
+    width: 70vw;
+    font-family: var(--text);
+    color: var(--white);
+    text-align: justify;
+    font-size: 1.1vw;
+  }
+
+  .AllCommentsContainer {
+    height: 20vh;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+  }
+
+  .OneCommentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5vw;
+    border: 0.2vw solid var(--white);
+    margin-bottom: 1vh;
+    width: 65vw;
+    height: auto;
+    font-size: 3.5vw;
+  }
+
+  .OneCommentContainer > p {
+    align-self: flex-start;
+    width: 100%;
+    height: auto;
+    overflow: initial;
+    line-break: anywhere;
+  }
+
+  .OneCommentHeader {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-weight: 600;
+    color: var(--yellow);
+  }
+
+  .CommentInput {
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: space-between;
+    width: 65vw;
+    height: 5vh;
+  }
+
+  .CommentInput img {
+    width: 5vw;
+    cursor: pointer;
+  }
+
+  .CommentInput input {
+    height: 100%;
+    width: 91%;
+    border: none;
+    outline: none;
+    font-size: 3vw;
+    font-family: var(--text);
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+}
+
+.ArtDetailsCommentsContainer > p {
+  font-size: 1.2vw;
+}
