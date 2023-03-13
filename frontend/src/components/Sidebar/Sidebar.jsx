@@ -29,17 +29,19 @@ function Sidebar({ id, picto, shadow, txt, points, explore, link }) {
         });
   }, [gameMode]);
 
-  gsap.timeline().fromTo(
-    ".eachElementSidebar h1",
-    {
-      scale: 0,
-    },
-    {
-      duration: 0.5,
-      scale: 1,
-      ease: "back",
-    }
-  );
+  useEffect(() => {
+    gsap.timeline().fromTo(
+      ".eachElementSidebar h1",
+      {
+        scale: 0,
+      },
+      {
+        duration: 0.5,
+        scale: 1,
+        ease: "back",
+      }
+    );
+  }, [gameMode]);
 
   let animation = gsap.timeline();
 
