@@ -36,9 +36,9 @@ function CreateAccount() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const data = {
-      userName: e.target[0].value,
-      mail: e.target[1].value,
-      password: e.target[2].value,
+      userName: e.target.userName.value,
+      mail: e.target.mail.value,
+      password: e.target.password.value,
       avatar: activeIndex,
     };
     api
@@ -56,6 +56,8 @@ function CreateAccount() {
       .catch((err) => {
         if (err.response.status === 409) {
           setError("Email deja utilisé");
+        } else if (err.response.status === 400) {
+          setError("Pass = + de 4 caracteres");
         }
       });
   };
@@ -116,15 +118,19 @@ function CreateAccount() {
           <form className="CreateAccount_Form" onSubmit={handleSubmit}>
             <div className="CreateAccount_User">
               <label htmlFor="userName">Pseudo:</label>
-              <input type="text" placeholder="Pseudo..." />
+              <input type="text" placeholder="Pseudo..." name="userName" />
             </div>
             <div className="CreateAccount_Email">
               <label htmlFor="mail">Email:</label>
-              <input type="email" placeholder="Email..." />
+              <input type="email" placeholder="Email..." name="mail" />
             </div>
             <div className="CreateAccount_Password">
               <label htmlFor="password">mot de passe:</label>
-              <input type="password" placeholder="password..." />
+              <input
+                type="password"
+                placeholder="Password..."
+                name="password"
+              />
             </div>
             <div className="CreateAccount_footer">
               <p className="error">{error}</p>

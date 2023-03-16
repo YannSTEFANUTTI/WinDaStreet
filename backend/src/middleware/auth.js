@@ -1,5 +1,37 @@
 const argon2 = require("argon2");
 const jwt = require("jsonwebtoken");
+const Joi = require("joi");
+
+const userSchema = Joi.object({
+  userName: Joi.string().required().messages({
+    "string.empty": "Name cannot be an empty field",
+    "any.required": "Name is required",
+  }),
+  mail: Joi.string().email().required().messages({
+    "string.email": "Mail should be a valid email",
+    "string.empty": "Mail cannot be an empty field",
+    "any.required": "Mail is required",
+  }),
+  password: Joi.string().min(5).max(20).required().messages({
+    "string.min": "Pass should be min 4 characters",
+    "string.max": "Pass should be max 20 characters",
+    "string.empty": "Pass cannot be an empty field",
+  }),
+  avatar: Joi.number().required().messages({
+    "number.base": "Avatar should be a number",
+    "string.empty": "Avatar cannot be an empty field",
+    "any.required": "Avatar is required",
+  }),
+});
+
+// eslint-disable-next-line consistent-return
+const checkByJoi = (req, res, next) => {
+  const { error } = userSchema.validate(req.body);
+  if (error) {
+    return res.status(400).json({ error: error.details[0].message });
+  }
+  next();
+};
 
 const hashPassword = (req, res, next) => {
   argon2
@@ -56,4 +88,5 @@ module.exports = {
   hashPassword,
   verifyPassword,
   verifyToken,
+  checkByJoi,
 };
