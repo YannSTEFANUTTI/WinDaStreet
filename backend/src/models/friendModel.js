@@ -1,5 +1,6 @@
 const db = require("../../config");
 
+// Get all friends
 const findAll = (userId) => {
   return db
     .promise()
@@ -10,6 +11,7 @@ const findAll = (userId) => {
     .then(([res]) => res);
 };
 
+// Add a new friend
 const postNewFriend = (infoFriend) => {
   return db
     .promise()
@@ -17,6 +19,7 @@ const postNewFriend = (infoFriend) => {
     .then(([res]) => res);
 };
 
+// Delete a friend
 const deleteFriend = (idsupprFriend) => {
   const { userId, friendId } = idsupprFriend;
   return db

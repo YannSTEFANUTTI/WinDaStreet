@@ -1,6 +1,7 @@
 /* eslint-disable camelcase */
 const db = require("../../config");
 
+// Create a new score
 const createScore = (score, user_id) => {
   return db
     .promise()
@@ -8,6 +9,7 @@ const createScore = (score, user_id) => {
     .then(([res]) => res);
 };
 
+// Get all scores
 const getAllScore = () => {
   return db
     .promise()
@@ -17,6 +19,7 @@ const getAllScore = () => {
     .then(([res]) => res);
 };
 
+// Get a score
 const getOneScore = (id) => {
   return db
     .promise()
@@ -24,6 +27,7 @@ const getOneScore = (id) => {
     .then(([res]) => res);
 };
 
+// Update a score
 const incrementScore = (id, score) => {
   return db
     .promise()
@@ -31,6 +35,7 @@ const incrementScore = (id, score) => {
     .then(([res]) => res);
 };
 
+// Delete a score
 const deleteOne = (id) => {
   return db
     .promise()

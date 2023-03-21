@@ -1,6 +1,7 @@
 const friendModel = require("../models/friendModel");
 
 const friendController = {
+  // Get all friends
   getAllFriends: (req, res, next) => {
     const { id } = req.params;
     friendModel
@@ -8,12 +9,16 @@ const friendController = {
       .then((friend) => res.send(friend))
       .catch((err) => next(err));
   },
+
+  // Add a new friend
   addNewFriend: (req, res, next) => {
     friendModel
       .postNewFriend(req.body)
       .then((result) => res.status(201).send({ id: result.insertId }))
       .catch((err) => next(err));
   },
+
+  // Delete a friend
   deleteFriend: (req, res, next) => {
     friendModel
       .deleteFriend(req.body)

@@ -1,5 +1,6 @@
 const scoreModel = require("../models/scoreModel");
 
+// Create a new score
 const createScore = (req, res, next) => {
   const { id } = req.params;
   scoreModel
@@ -13,6 +14,7 @@ const createScore = (req, res, next) => {
     });
 };
 
+// Get a score
 const getScore = (req, res, next) => {
   const { id } = req.params;
   scoreModel
@@ -29,6 +31,7 @@ const getScore = (req, res, next) => {
     });
 };
 
+// Get all scores
 const getAllScore = (req, res, next) => {
   scoreModel
     .getAllScore()
@@ -44,6 +47,7 @@ const getAllScore = (req, res, next) => {
     });
 };
 
+// Update a score
 const incrementScore = (req, res, next) => {
   const { id } = req.params;
   const { Score } = req.body;
@@ -61,6 +65,7 @@ const incrementScore = (req, res, next) => {
     });
 };
 
+// Delete a score
 const deleteScore = (req, res, next) => {
   const { id } = req.params;
   scoreModel
