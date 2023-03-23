@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import "./Authentification.css";
 import { NavLink, useNavigate } from "react-router-dom";
 import cross from "../../assets/delete.png";
-import { useGame } from "../../contexts/gameModeContext";
+import { useGame } from "../../contexts/GameModeContext";
 import api from "../../services/api";
 
 function Authentification() {

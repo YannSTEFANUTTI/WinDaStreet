@@ -1,7 +1,7 @@
 /* eslint-disable import/no-unresolved */
 import api from "@services/api";
 import { useState, useEffect } from "react";
-import { useGame } from "../../contexts/gameModeContext";
+import { useGame } from "../../contexts/GameModeContext";
 import AdminButton from "./AdminButton";
 import "./AdminRequest.css";
 import AdminTemplate from "./AdminTemplate";

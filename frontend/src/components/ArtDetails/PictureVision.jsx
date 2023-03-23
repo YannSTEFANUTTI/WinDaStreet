@@ -6,7 +6,7 @@ import gsap from "gsap";
 import checkIfVisited from "@services/checkIfVisited";
 import CarouselArrow from "./CarouselArrow";
 import "./PictureVision.css";
-import { useGame } from "../../contexts/gameModeContext";
+import { useGame } from "../../contexts/GameModeContext";
 
 function PictureVision({ allPic, handlePictureVision, id }) {
   const [picTranslate, setPicTranslate] = useState(0);

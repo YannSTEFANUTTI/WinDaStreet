@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import send from "@assets/envoyer.png";
 import io from "socket.io-client";
 import { useNavigate } from "react-router";
-import { useGame } from "../../contexts/gameModeContext";
+import { useGame } from "../../contexts/GameModeContext";
 
 const socket = io.connect(import.meta.env.VITE_BACKEND_URL);
 

@@ -1,5 +1,5 @@
 /* eslint-disable consistent-return */
-const userModel = require("../models/UserModel");
+const userModel = require("../models/userModel");
 
 const userController = {
   login: (req, res, next) => {

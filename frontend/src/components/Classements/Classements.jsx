@@ -5,7 +5,7 @@ import TemplateWindows from "@components/TemplateWindows/TemplateWindows";
 import ClassEachPeople from "./ClassEachPeople";
 import Toggle from "../Toggle/Toggle";
 import AvatarArray from "../CreateAccount/Avatar";
-import { useGame } from "../../contexts/gameModeContext";
+import { useGame } from "../../contexts/GameModeContext";
 import "./Classements.css";
 
 function Classements() {

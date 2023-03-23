@@ -19,7 +19,7 @@ import Admin from "@components/Admin/Admin";
 import ArtDetails from "@components/ArtDetails/ArtDetails";
 import Classements from "@components/Classements/Classements";
 import Toggle from "@components/Toggle/Toggle";
-import { useGame } from "./contexts/gameModeContext";
+import { useGame } from "./contexts/GameModeContext";
 
 function App() {
   const { gameMode, switchMode, user } = useGame();

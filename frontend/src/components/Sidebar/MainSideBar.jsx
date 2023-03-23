@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import api from "@services/api";
 import Sidebar from "@components/Sidebar/Sidebar";
 import sidebarData from "@components/Sidebar/sidebarData";
-import { useGame } from "../../contexts/gameModeContext";
+import { useGame } from "../../contexts/GameModeContext";
 
 function MainSideBar() {
   const [score, setScore] = useState([]);

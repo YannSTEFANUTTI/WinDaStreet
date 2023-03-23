@@ -7,7 +7,7 @@ import add from "@assets/more-info-white.png";
 import api from "@services/api";
 import { useState, useEffect } from "react";
 import { useDetectClickOutside } from "react-detect-click-outside";
-import { useGame } from "../../contexts/gameModeContext";
+import { useGame } from "../../contexts/GameModeContext";
 
 function ResultsDisplay({
   isAddFriend,

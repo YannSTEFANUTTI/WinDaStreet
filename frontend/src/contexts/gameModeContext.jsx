@@ -4,10 +4,10 @@ import propTypes from "prop-types";
 import { createContext, useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 
-const gameModeContext = createContext();
+const GameModeContext = createContext();
 
 function GameModeProvider({ children }) {
-  const { Provider } = gameModeContext;
+  const { Provider } = GameModeContext;
 
   const [gameMode, setGameMode] = useState(true);
   const [user, setUser] = useState();
@@ -73,7 +73,7 @@ function GameModeProvider({ children }) {
   );
 }
 
-export const useGame = () => useContext(gameModeContext);
+export const useGame = () => useContext(GameModeContext);
 export default GameModeProvider;
 
 GameModeProvider.propTypes = {

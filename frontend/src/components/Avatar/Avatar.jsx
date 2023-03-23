@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 // eslint-disable-next-line import/no-unresolved
 import api from "@services/api";
 import gsap from "gsap";
-import { useGame } from "../../contexts/gameModeContext";
+import { useGame } from "../../contexts/GameModeContext";
 import AvatarArray from "../CreateAccount/Avatar";
 import "./Avatar.css";
 

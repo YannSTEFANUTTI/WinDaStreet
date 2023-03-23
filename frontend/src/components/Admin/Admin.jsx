@@ -1,7 +1,7 @@
 /* eslint-disable import/no-unresolved */
 import "./Admin.css";
 import { useNavigate } from "react-router";
-import { useGame } from "../../contexts/gameModeContext";
+import { useGame } from "../../contexts/GameModeContext";
 import AdminAllUser from "./AdminAllUser";
 import AdminRequest from "./AdminRequest";
 import AdminAddArt from "./AdminAddArt";

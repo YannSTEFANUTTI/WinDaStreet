@@ -14,7 +14,7 @@ import console from "../../assets/console.png";
 import textIntro from "../../assets/TexteIntro.gif";
 
 import "./MainMenu.css";
-import { useGame } from "../../contexts/gameModeContext";
+import { useGame } from "../../contexts/GameModeContext";
 
 function MainMenu() {
   const [greenStyle, setGreenStyle] = useState(true);

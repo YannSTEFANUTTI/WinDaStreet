@@ -10,7 +10,7 @@ import PictureVision from "./PictureVision";
 import CarouselArrow from "./CarouselArrow";
 import ArtDetailsText from "./ArtDetailsText";
 import ArtDetailsComments from "./ArtDetailsComments";
-import { useGame } from "../../contexts/gameModeContext";
+import { useGame } from "../../contexts/GameModeContext";
 
 function ArtDetails() {
   const [picTranslate, setPicTranslate] = useState(0);

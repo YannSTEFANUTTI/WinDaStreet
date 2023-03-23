@@ -7,7 +7,7 @@ import checkIfVisited from "@services/checkIfVisited";
 import BtnmoreInfos from "./BtnmoreInfos";
 import traitblanc from "../../assets/trait.png";
 import capture from "../../assets/camera-white.png";
-import { useGame } from "../../contexts/gameModeContext";
+import { useGame } from "../../contexts/GameModeContext";
 
 function OneArt({ art, handleNotif }) {
   const inputRef = useRef();

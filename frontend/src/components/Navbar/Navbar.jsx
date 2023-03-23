@@ -7,7 +7,7 @@ import PopUpNotif from "@components/PopUpNotif/PopUpNotif";
 import spraySound from "@assets/spray.mp3";
 import { Link } from "react-router-dom";
 import UserInfoNavbar from "./UserInfoNavbar";
-import { useGame } from "../../contexts/gameModeContext";
+import { useGame } from "../../contexts/GameModeContext";
 
 function Navbar() {
   const { user, gameMode, switchMode } = useGame();

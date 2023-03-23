@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import "./Sidebar.css";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import { useGame } from "../../contexts/gameModeContext";
+import { useGame } from "../../contexts/GameModeContext";
 
 function Sidebar({ id, picto, shadow, txt, points, explore, link }) {
   const { gameMode } = useGame();

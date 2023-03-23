@@ -2,7 +2,7 @@
 import PropTypes from "prop-types";
 import api from "@services/api";
 import { useEffect, useState } from "react";
-import { useGame } from "../../contexts/gameModeContext";
+import { useGame } from "../../contexts/GameModeContext";
 import ResultsDisplay from "./resultsDisplay";
 import UserInfoData from "./UserInfoData";
 

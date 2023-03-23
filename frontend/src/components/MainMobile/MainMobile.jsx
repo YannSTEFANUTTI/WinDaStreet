@@ -8,7 +8,7 @@ import red from "../../assets/BoutonRouge.png";
 import textIntro from "../../assets/TexteIntro.gif";
 import console from "../../assets/GameBoy-sansecran.png";
 import "./MainMobile.css";
-import { useGame } from "../../contexts/gameModeContext";
+import { useGame } from "../../contexts/GameModeContext";
 
 function MainMobile() {
   const [greenStyle, setGreenStyle] = useState(true);
