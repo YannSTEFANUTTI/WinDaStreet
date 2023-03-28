@@ -3,19 +3,21 @@ const jwt = require("jsonwebtoken");
 const Joi = require("joi");
 
 const userSchema = Joi.object({
-  userName: Joi.string().required().messages({
-    "string.empty": "Name cannot be an empty field",
-    "any.required": "Name is required",
+  userName: Joi.string().min(3).max(13).required().messages({
+    "string.empty": "Choisi un pseudo",
+    "any.required": "Choisi un pseudo",
+    "string.min": "Pseudo = min 3 caracteres",
+    "string.max": "Pseudo = max 13 caracteres",
   }),
   mail: Joi.string().email().required().messages({
-    "string.email": "Mail should be a valid email",
-    "string.empty": "Mail cannot be an empty field",
-    "any.required": "Mail is required",
+    "string.email": "L'adresse mail n'est pas valide",
+    "string.empty": "Il faut une adresse mail",
+    "any.required": "Il faut une adresse mail",
   }),
-  password: Joi.string().min(5).max(20).required().messages({
-    "string.min": "Pass should be min 4 characters",
-    "string.max": "Pass should be max 20 characters",
-    "string.empty": "Pass cannot be an empty field",
+  password: Joi.string().min(5).max(12).required().messages({
+    "string.min": "Le mot de passe doit faire au moins 5 caracteres",
+    "string.max": "Le mot de passe doit faire plus de 12 caracteres",
+    "string.empty": "Il faut un mot de passe",
   }),
   avatar: Joi.number().required().messages({
     "number.base": "Avatar should be a number",

@@ -57,7 +57,7 @@ function CreateAccount() {
         if (err.response.status === 409) {
           setError("Email deja utilisé");
         } else if (err.response.status === 400) {
-          setError("Pass = + de 4 caracteres");
+          setError(err.response.data.error);
         }
       });
   };
