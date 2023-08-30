@@ -22,6 +22,7 @@
   margin-left: 1vw;
   margin-top: 1vh;
   margin-bottom: 3vh;
+  min-width: 7vw;
 }
 
 .classCategories {
@@ -107,6 +108,7 @@
     text-align: left;
     margin: 2vw;
     margin-bottom: 2vh;
+    min-width: 0vw;
   }
 
   .classCategories {

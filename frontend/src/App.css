@@ -1,8 +1,21 @@
-@import url(//db.onlinewebfonts.com/c/f04662ccafcc9e2ac4a8cafff8fcf24f?family=8-bit+pusab);
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap");
 @font-face {
+  font-family: "F8-bit pusab Regular";
+  src: url("https://db.onlinewebfonts.com/t/f04662ccafcc9e2ac4a8cafff8fcf24f.eot");
+  src: url("https://db.onlinewebfonts.com/t/f04662ccafcc9e2ac4a8cafff8fcf24f.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/f04662ccafcc9e2ac4a8cafff8fcf24f.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/f04662ccafcc9e2ac4a8cafff8fcf24f.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/f04662ccafcc9e2ac4a8cafff8fcf24f.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/f04662ccafcc9e2ac4a8cafff8fcf24f.svg#F8-bit pusab Regular")
+      format("svg");
+}
+@font-face {
   font-family: Nintendo-DS-BIOS;
-  src: url(./assets/Nintendo-DS-BIOS.ttf);
+  src: url(../src/assets/Nintendo-DS-BIOS.ttf);
 }
 
 * {
@@ -21,7 +34,7 @@
   --blackTrans: rgba(36, 35, 34, 0.88);
   --whiteTrans: rgba(238, 238, 238, 0.3);
   --text: "Montserrat", sans-serif;
-  --title: "8-bit pusab";
+  --title: "F8-bit pusab Regular";
 }
 
 .App {

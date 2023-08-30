@@ -87,7 +87,7 @@ function Avatar() {
                 </NavLink>
               )}
             </p>
-            <p className="friendsGet">{friends.length} amis</p>
+            <p className="friendsGet">{friends.length - 1} amis</p>
             <p className="visitedFound">{visited.length} oeuvres decouvertes</p>
 
             <p
